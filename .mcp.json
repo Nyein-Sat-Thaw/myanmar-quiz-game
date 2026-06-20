@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "gh",
+      "args": ["api"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-filesystem"]
+    }
+  }
+}

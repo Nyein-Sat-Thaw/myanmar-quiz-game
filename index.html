@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🇲🇲 Myanmar Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🇲🇲 Myanmar Quiz Game</h1>
+      <p class="subtitle">Test your knowledge about Myanmar!</p>
+    </header>
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen active">
+      <div class="category-select">
+        <h2>Choose a Category</h2>
+        <button class="btn category-btn" data-category="history">🏛️ History</button>
+        <button class="btn category-btn" data-category="culture">🎭 Culture</button>
+        <button class="btn category-btn" data-category="geography">🗺️ Geography</button>
+        <button class="btn category-btn" data-category="food">🍜 Food</button>
+        <button class="btn category-btn" data-category="mixed">🎲 Mixed (All)</button>
+      </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen">
+      <div class="quiz-header">
+        <span id="category-label"></span>
+        <span id="score-display">Score: 0</span>
+        <span id="question-counter">1 / 10</span>
+      </div>
+      <div class="progress-bar">
+        <div id="progress" class="progress-fill"></div>
+      </div>
+      <div id="question-container">
+        <h2 id="question-text"></h2>
+        <div id="options-container" class="options"></div>
+      </div>
+      <button id="next-btn" class="btn hidden">Next →</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen">
+      <h2 id="result-title"></h2>
+      <div id="result-score"></div>
+      <p id="result-message"></p>
+      <div id="result-details"></div>
+      <button id="restart-btn" class="btn">Play Again 🔄</button>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
